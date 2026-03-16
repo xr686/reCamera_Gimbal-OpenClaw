@@ -1,10 +1,51 @@
 # reCamera_Gimbal-OpenClaw
-Use OpenClaw to control the motor, speaker, microphone, LED, and camera of the reCamera Gimbal.  
-使用OpenClaw来控制reCamera Gimbal的电机、扬声器、麦克风、LED和摄像头。
 
+🌍 [English](#english) | [简体中文](#简体中文)
 
-I uploaded the JSON file for the reCamera Gimbal, which you can import into Node-RED, and I have opened two HTTP interfaces, one for controlling the dual-motor angle of the reCamera Gimbal and one for taking photos, such as http://192.168.1.2:1880/api/gimbal?yaw=90&pitch=45 and http://192.168.1.2:1880 / api / photo.  
-我上传了reCamera Gimbal的JSON文件，你可以在Node-RED中进行导入，并且我开放了两个http接口，分别用于控制reCamera Gimbal的双电机角度和拍照，例如http://192.168.1.2:1880/api/gimbal?yaw=90&pitch=45和http://192.168.1.2:1880/api/photo
+---
 
-As for Skills, I am currently writing the Chinese version, but it does not affect the operation of OpenClaw. I mean that if you directly use English or other languages to communicate with OpenClaw to control the reCamera Gimbal, it is also possible. If you want to write Skills yourself, please refer to the Skills writing specification https://agentskills.io/specification#allowed-tools-field  
-至于Skills，我目前写的是中文版本的，但是它并不影响OpenClaw的操作，我是指如果你直接使用英文或者其他语言直接和OpenClaw交流来控制reCamera Gimbal也是可以的。如果您想自己编写Skills，请查看Skills编写规范https://agentskills.io/specification#allowed-tools-field
+## English
+
+### Overview
+Use **OpenClaw** to control the motor, speaker, microphone, LED, and camera of the **reCamera Gimbal**.
+
+### Node-RED Integration
+I have uploaded a JSON file for the reCamera Gimbal, which you can easily import into Node-RED. This configuration exposes two HTTP interfaces for device control:
+
+* **Control Dual-Motor Angle**: 
+    ```http
+    [http://192.168.1.2:1880/api/gimbal?yaw=90&pitch=45](http://192.168.1.2:1880/api/gimbal?yaw=90&pitch=45)
+    ```
+* **Take Photos**: 
+    ```http
+    [http://192.168.1.2:1880/api/photo](http://192.168.1.2:1880/api/photo)
+    ```
+
+### Skills Configuration
+The Skills currently provided are written in Chinese, but this does not affect the core operation of OpenClaw. You can interact with OpenClaw in English or any other language to control the reCamera Gimbal without any issues. 
+
+If you want to write and customize your own Skills, please refer to the [AgentSkills Specification](https://agentskills.io/specification#allowed-tools-field).
+
+---
+
+## 简体中文
+
+### 简介
+使用 **OpenClaw** 来控制 **reCamera Gimbal** 的电机、扬声器、麦克风、LED 和摄像头。
+
+### Node-RED 集成
+本项目提供了一个适用于 reCamera Gimbal 的 JSON 文件，您可以直接将其导入到 Node-RED 中。该配置开放了两个 HTTP 接口以供调用：
+
+* **控制双电机角度**：
+    ```http
+    [http://192.168.1.2:1880/api/gimbal?yaw=90&pitch=45](http://192.168.1.2:1880/api/gimbal?yaw=90&pitch=45)
+    ```
+* **控制拍照**：
+    ```http
+    [http://192.168.1.2:1880/api/photo](http://192.168.1.2:1880/api/photo)
+    ```
+
+### Skills 配置
+目前提供的 Skills 是中文版本的，但这并不影响 OpenClaw 的正常运行。您可以直接使用英文或其他语言与 OpenClaw 交流，同样可以实现对 reCamera Gimbal 的控制。
+
+如果您想自己编写和自定义 Skills，请查阅 [AgentSkills 编写规范](https://agentskills.io/specification#allowed-tools-field)。
