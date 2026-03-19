@@ -1,5 +1,7 @@
 # reCamera Gimbal × OpenClaw
 
+[简体中文](./README_zh.md) | **English**
+
 Control the **reCamera Gimbal** edge AI camera with **[OpenClaw](https://github.com/anthropics/openclaw)** — use natural language to drive gimbal rotation, photo capture & recognition, LED lighting, audio recording & playback.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
@@ -180,6 +182,3 @@ After importing `openclaw_V2.json`, the Dashboard is accessible at `http://<DEVI
 [nodered]: https://nodered.org/
 [sscma]: https://github.com/Seeed-Studio/SSCMA
 
-## License
-
-[MIT](./LICENSE)
