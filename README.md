@@ -1,6 +1,6 @@
 -----
 
-[English] | [简体中文](https://github.com/Seeed-Projects/reCamera_Gimbal-OpenClaw/blob/main/README_zh.md)
+[English] | [简体中文](https://github.com/xr686/reCamera_Gimbal-OpenClaw/blob/main/README_zh.md)
 
 -----
 
